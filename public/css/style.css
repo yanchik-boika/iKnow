@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.all_header_menu {
+    width: 100%;
+    height: 50px;
+    background: #1b1c1c;
+    display: flex;
+    justify-content: center; /* выставляем текст по центру */
+    padding-bottom: 10px;
+}
+
+#menu {
+    display: inline-block;
+    background: #1b1c1c;
+}
+
+ul#nav li {
+    margin-top: 15px;
+    list-style-type: none;
+    float: left; /*дает возможноть элементам меню быть в ряд*/
+    background: #1b1c1c;
+}
+
+ul#nav li a { /* выставляет отступы между элементами менющки */
+    display: block;
+    padding: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+ul#nav li li a { /* выставляет длину каждого выпадаюшего блока */
+    width: 250px;
+}
+
+ul#nav li ul { /* тоже влияет на выпадающюю менюшку */
+    overflow: hidden;
+    display: none;
+    position: absolute;
+}
+
+ul#nav li:hover ul { /* благодаря этому блоку при навелении выпадает менюшка */
+    position: absolute;
+    padding: 0;
+    display: block;
+    width: 250px;
+    background: #1b1c1c;
+    margin-top: 2.4%; /* выставляет отступ, чтобы первый элемент менюшки не налазил на элемент главного меню */
+    margin-bottom: -2%;
+}
+
+#menu li { /* здесь даем слить tексту главной менюшки */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial;
+    font-size: 100%;
+}
+
+#menu a {
+    float: left;
+    display: inline-block;
+    color: #898b8c;
+    text-decoration: none;
+    background: #1b1c1c;
+}
+
+#menu a:hover {
+    /*background: #454443;*/
+    color: #ffffff;
+    text-decoration: none;
+}
+.Introduction-block{
+    background: black;
+    /*background: #1b1c1c;*/
+    display: block;
+    width: 100%;
+    height: 15em;
+}
+.Introduction-block h2 {
+    font-family: calibri;
+    color: white;
+    justify-content: center; /* выставляем текст по центру */
+    text-align: center;
+    padding-top: 25px;
+    font-size: 325%;
+}
+
+.Introduction-block h4 {
+    font-family: AppleGothic;
+    color: #ffffff;
+    justify-content: center; /* выставляем текст по центру */
+    text-align: center;
+    font-size: 150%;
+}
+
+.Fisrt-block {
+    display: block;
+    background: black;
+    width: 100%;
+    height: 200px;
+}
+
+.Fisrt-block h2 {
+    font-family: calibri;
+    color: white;
+    justify-content: center; /* выставляем текст по центру */
+    text-align: center;
+    padding-top: 25px;
+    font-size: 325%;
+}
+
+.Fisrt-block h4 {
+    font-family: AppleGothic;
+    color: #ffffff;
+    justify-content: center; /* выставляем текст по центру */
+    text-align: center;
+    font-size: 150%;
+}
+
+.firstOne {
+    color: #2c8df5;
+    justify-content: center;
+    text-align: center;
+    padding-left: 45%;
+    text-decoration: none;
+    font-size: 130%;
+    font-family: "Apple SD Gothic Neo";
+}
+.firstImage img{
+    width: 100%;
+}
+.secondImage img{
+    width: 100%;
+}
+.thirdImage img{
+    width: 100%;
+}
+
+.secondOne {
+    color: #2c8df5;
+    justify-content: center;
+    text-align: center;
+    padding-left: 35px;
+    text-decoration: none;
+    font-size: 130%;
+    font-family: "Apple SD Gothic Neo";
+}
+.Fisrt-block a:hover{
+    text-decoration: underline;
+}
+.second-block{
+    display: block;
+    background: #f2f5f4;
+    width: 100%;
+    height: 250px;
+}
+.second-block h2 {
+    font-family: calibri;
+    color: black;
+    justify-content: center; /* выставляем текст по центру */
+    text-align: center;
+    padding-top: 25px;
+    font-size: 325%;
+}
+
+.second-block h4 {
+    font-family: AppleGothic;
+    color: black;
+    justify-content: center; /* выставляем текст по центру */
+    text-align: center;
+    font-size: 150%;
+}
+.second-block a:hover{
+    text-decoration: underline;
+}
+
+.third-block{
+    display: block;
+    background: white;
+    width: 100%;
+    height: 250px;
+}
+.third-block h2 {
+    font-family: calibri;
+    color: black;
+    justify-content: center; /* выставляем текст по центру */
+    text-align: center;
+    padding-top: 25px;
+    font-size: 325%;
+}
+
+.third-block h4 {
+    font-family: AppleGothic;
+    color: black;
+    justify-content: center; /* выставляем текст по центру */
+    text-align: center;
+    font-size: 150%;
+}
+.third-block a:hover{
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 6em;
+    height: 200px;
+    width: 100%;
+    background: #1b1c1c;
+    color: white;
+    display: flex;
+    justify-content: space-around; /* Равномерно распределяет пространство между дочерними элементами */
+    align-items: center; /* Выравнивает дочерние элементы по центру по вертикали */
+}
+
+footer .lover,
+footer .aboutme {
+    width: 45%; /* Ширина каждого столбца */
+}
+
+footer .lover {
+    text-align: left; /* Выравнивание текста в левом столбце */
+    margin-left: 35%; /* Дополнительный отступ для лучшего визуального разделения от края */
+}
+
+footer .aboutme {
+    text-align: left; /* Выравнивание текста в правом столбце */
+    margin-right:35%; /* Дополнительный отступ для лучшего визуального разделения от края */
+}
+
+/* Добавляем медиа-запросы для устройств с максимальной шириной экрана до 768px */
+@media screen and (max-width: 768px) {
+    /* Здесь вы можете добавить стили, которые будут применяться для устройств с шириной экрана до 768px */
+    header {
+        flex-direction: column; /* изменяем направление расположения элементов в header на столбец */
+    }
+
+    .all_header_menu {
+        height: auto; /* автоматический размер высоты для header меню */
+        padding-bottom: 0; /* убираем отступ снизу */
+    }
+
+    ul#nav li {
+        float: none; /* отменяем float для элементов меню */
+        margin: 10px 0; /* добавляем отступы между элементами меню */
+    }
+
+    ul#nav li a {
+        margin-right: 0; /* убираем правый отступ у элементов меню */
+    }
+
+    ul#nav li ul {
+        position: static; /* изменяем позицию выпадающего меню на статическую */
+        display: none; /* скрываем выпадающее меню по умолчанию */
+    }
+
+    ul#nav li:hover ul {
+        margin-top: 0; /* убираем отступ сверху у выпадающего меню */
+    }
+    footer{
+        margin-top: 5em;
+    }
+    footer .lover {
+        text-align: left;
+        margin-right: 20px; /* Добавляем правый отступ между элементами */
+        font-size: 14px;
+    }
+
+    footer .aboutme {
+        text-align: left;
+        font-size: 14px;
+    }
+    ul#nav li:hover ul {
+        position: absolute;
+        padding: 0;
+        display: block;
+        width: 250px;
+        background: #1b1c1c;
+        margin-top: 2.4%;
+        margin-bottom: -2%;
+        right: 0; /* Добавляем, чтобы панель выскакивала с левого края */
+    }
+}
+
+
+
