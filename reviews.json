@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Yan",
+    "email": "yanchik.boika@gmail.com",
+    "message": "I love Apple!",
+    "business": true,
+    "study": false,
+    "development": false
+  },
+  {
+    "name": "Adam",
+    "email": "abcd@gmail.com",
+    "message": "I have a lot of apple devices! And I like it:)",
+    "business": false,
+    "study": true,
+    "development": false
+  },
+  {
+    "name": "Michael",
+    "email": "michael.huddleston@gmail.com",
+    "message": "I do not use apple. I think it's better to use Android instead.",
+    "business": true,
+    "study": false,
+    "development": false
+  },
+  {
+    "name": "Lebron",
+    "email": "lebrom.james@gmail.com",
+    "message": "I have a lot of apple devices!\nAnd I like it",
+    "business": true,
+    "study": false,
+    "development": false
+  }
+]
