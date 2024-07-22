@@ -1,0 +1,229 @@
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+main{
+    color: black;
+}
+#form-section{
+    margin-left: 1em;
+    width: 50%;
+    height: 30%;
+}
+#my-form {
+    margin-top: 2em;
+    margin-left: 2em;
+    width: 50%;
+    height: 60%; /* Увеличиваем высоту формы до 60% от родительского контейнера */
+}
+#my-form input{
+    width: 70%;
+    height: 2.5em;
+    border: 1px solid #898b8c;/* Увеличиваем высоту формы до 60% от родительского контейнера */
+}
+#my-form input, textarea{
+    border-radius: 10px;
+    border: 1px solid #898b8c
+}
+#my-form textarea{
+    width: 100%;
+    height: 7em;
+    padding: 0;
+}
+input,
+textarea{
+    font-size: 14px; /* Увеличьте или уменьшите размер шрифта по вашему желанию */
+}
+button {
+    margin-left: 0.5em;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #1b1c1c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+button:hover {
+    background-color: grey;
+}
+
+#data-section {
+    margin-left: 1em;
+}
+#data-section ul{
+    margin-left: 2em;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#form-error {
+    color: red;
+    margin-top: 10px;
+}
+
+#data-list {
+    list-style-type: none;
+}
+
+#data-list li {
+    margin-bottom: 10px;
+}
+#data-list li{
+    width: 20em;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #898b8c;
+    border-radius: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center; /* Выравнивание по центру */
+}
+.checkbox-container label {
+    margin-top: 0.4em;
+    margin-right: 30px; /* Уменьшаем расстояние между метками и квадратиками выбора */
+}
+
+footer{
+    margin-top: 5em;
+}
+
+#slider-section h6{
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    /* Стили, применяемые на устройствах с шириной экрана до 768px */
+    .iPhone-first-block {
+        height: auto; /* Автоматическая высота блока */
+        flex-direction: column; /* Блоки располагаются в столбец */
+        align-items: center; /* Выравнивание по центру */
+    }
+
+    #main-photo {
+        margin-left: 0; /* Убираем отступ слева */
+        width: 80%; /* Ширина фотографии */
+    }
+
+    .iPhone-first-block h3 {
+        margin-left: 0; /* Убираем отступ слева */
+        margin-top: 5%; /* Уменьшаем отступ сверху */
+        font-size: 200%; /* Уменьшаем размер заголовка */
+    }
+
+    .iPhone-table {
+        margin: 0; /* Убираем отступы */
+    }
+
+    table {
+        width: 100%; /* Ширина таблицы на всю ширину экрана */
+    }
+
+    .table-photo {
+        width: 100%; /* Ширина фотографии в ячейке таблицы */
+        margin-left: 0; /* Убираем отступ слева */
+        margin-top: 0; /* Убираем отступ сверху */
+    }
+    .table-text, .upgrade {
+        font-size: 10px; /* Уменьшаем размер шрифта кнопки */
+    }
+    .button-Comment{
+        margin-top: 3em;
+        margin-left: -0.5em;
+    }
+    footer{
+        margin-top: 5em;
+    }
+    footer .lover {
+        text-align: left;
+        margin-right: 20px; /* Добавляем правый отступ между элементами */
+        font-size: 14px;
+    }
+
+    footer .aboutme {
+        text-align: left;
+        font-size: 14px;
+    }
+    ul#nav li:hover ul {
+        position: absolute;
+        padding: 0;
+        display: block;
+        width: 250px;
+        background: #1b1c1c;
+        margin-top: 2.4%;
+        margin-bottom: -2%;
+        right: 0; /* Добавляем, чтобы панель выскакивала с левого края */
+    }
+    .checkbox-container label {
+        margin-right: 3px; /* Уменьшаем отступ меток на маленьких экранах */
+    }
+
+    .checkbox-container input[type="checkbox"] {
+        margin-right: 1em; /* Уменьшаем отступы чекбоксов на маленьких экранах */
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .checkbox-container label,
+    .checkbox-container input[type="checkbox"] {
+        margin-right: 7px; /* Настройте отступы для среднего диапазона экранов */
+    }
+}
+
+
+#slider-section {
+    float: right;
+    width: 40%; /* Измените ширину по вашему усмотрению */
+    margin-top: 5em; /* Измените отступ сверху по вашему усмотрению */
+    margin-right: 6em;
+    position: relative;
+    z-index: 1;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-image {
+    display: none;
+}
+
+.slider-image img {
+    width: 100%;
+    height: auto;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+
+.dropdown{
+    z-index: 3;
+}
